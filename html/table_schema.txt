@@ -1,0 +1,24 @@
+create table photos(
+	pic_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	pic_title varchar(110),
+	pic_caption varchar(30),
+	pic_description text,
+	pic_tags varchar(50),
+	pic_date INT,
+	pic_user_id INT
+) Engine="InnoDB";
+
+create table users(
+	user_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	user_first_name varchar(50),
+	user_last_name varchar(50),
+	user_email varchar(75),
+	user_pass varchar(100),
+	user_date INT
+) ENGINE="InnoDB";
+
+create table tags(
+	tag_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	tag varchar(30),
+	tag_display_name varchar(50),
+) ENGINE='InnoDB';
