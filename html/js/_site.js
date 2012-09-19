@@ -14,6 +14,11 @@ $(function() {
 		var ele = $(this).attr('href');
 		if(ele == '#login_modal') {
 			$('#register_modal').hide();
+			if($('#login_modal').is(':visible')) {
+				for(var i = 0; i < 2; i++) {
+					$('#login_modal').animate({'left': '+=10px'}, 'fast').animate({'left': '-=10px'}, 'fast');
+				}
+			}
 		} else {
 			$('#login_modal').hide();
 		}
@@ -61,7 +66,7 @@ $(function() {
 		success: function(res) {
 			console.log(res);
 			if(res.status == 'success') {
-				window.location.reload = true;
+				window.location.reload(true);
 			} else if (res.status == 'fail') {
 				var ele = $('.error');
 				for(error in res.errors) {
