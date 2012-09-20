@@ -105,6 +105,25 @@ if(isset($user)) {
 
 	</ul> 
 
+	<br class="clear">
+
+	<div id="edit_modal" class="modal">
+
+		<h3>Edit</h3>
+		<form method="POST" action="ajax/login.php" id="edit_form" name="edit_form">
+			<fieldset>
+				<input type="text" name="photo_title" id="photo_title" value="Photo Caption">
+			</fieldset>
+			<fieldset>
+				<input type="submit" name="photo_edit" id="photo_edit" class="submit" value="Login">
+				<input type="hidden" name="photo_id" id="photo_id" value="<?=session_id();?>">
+				<input type="hidden" name="photo_session_id" id="photo_session_id" value="<?=session_id();?>">
+			</fieldset>
+		</form>
+		<span class="close"><a href="#">Close</a></span>
+
+	</div>
+
 </section>
 <?php
 } else {

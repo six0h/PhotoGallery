@@ -9,7 +9,7 @@ a { color: #3d8ccf; }
 body>header { position: relative; height: 180px; width: 100%; background: url('../img/headershadow.png') repeat-x 0 70px #edefef; border-bottom: 10px solid #fff; margin: 0; }
 body>header #login-box { position: absolute; top: 20px; left: 40px; }
 
-body>header h1 { position: relative; z-index: 0; top: 80px; left: 40px; font-size: 3.6em; font-family: deliciousbold; }
+body>header h1 { position: relative; z-index: 0; top: 80px; left: 40px; font-size: 3.6em; font-family: deliciousbold; width: 300px;}
 body>header span { position: relative; top: 80px; left: 40px; text-transform: uppercase; font-size: 1.4em; }
 
 body>header div { font-size: 1.2em; }
@@ -24,7 +24,7 @@ body>header #register_modal { display: none; width: 300px; margin: 10px 0 0 70px
 .modal input { display: block; width: 95%; height: 20px; padding: 5px; font-size: 1em; font-family: delicious; font-style: italic; color: #c0c0c0; margin: 0 0 10px 0; }
 .modal input.submit { display: block; border: 0; width: 62px; height: 28px; text-indent: -9999pt; float: right; box-shadow: 0; }
 .modal a { font-size: .6em; margin: 5px 0 0 0; text-align: right; width: 70%; display: block; float: left; }
-.modal .close { position: absolute; top: 10px; left: 270px; font-size: 1em; text-transform: none; font-family: delicious; }
+.modal .close { position: absolute; top: 10px; right: 10px; font-size: 1em; text-transform: none; font-family: delicious; }
 .modalarrow { display: block; position: absolute; width: 19px; height: 8px; background: url('../img/modalarrow.png') no-repeat; top: -8px; left: 20px; z-index: 11; border: 0; }
 
 
@@ -37,4 +37,6 @@ body>header #register_modal { display: none; width: 300px; margin: 10px 0 0 70px
 
 #gallery ul li a.edit_link { position: absolute; top: 5px; right: 5px; background: #fff; padding: 2px; }
 
+#edit_modal { display: none; position: absolute; top: 30px; left: 30px; width: 300px; height: 150px; font-size: 1.4em; }
+#edit_modal .submit { background: url(../img/editbtn.jpg) no-repeat; }
 
